@@ -9,7 +9,6 @@ public:
 	float average(DiceRoll, int);
 	float average(int[], int);
 };
-
 int DiceRoll::Roll()
 {
 	int random;
@@ -37,6 +36,6 @@ float DiceRoll::average(int NRolls[], int Numbr)
 		rnd += NRolls[i];//add the integers from the array 
 
 	}
-	return (int)(rnd) / (Numbr);
+	return rnd / (Numbr);
 
 }
